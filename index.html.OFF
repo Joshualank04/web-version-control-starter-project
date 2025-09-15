@@ -1,25 +1,28 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
-<head>
+  <head>
+    <title>Bootstrap Example</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Web Page Template</title>
-
-    <!-- Bootstrap CSS -->
+      <!--Using bootstrap 5.3.3 framework-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+      <style>
+	      body { 
+        background-color:lightblue; 		
+        font-size: 16pt;
+  	    text-align: center;
+        } 
+	  </style>
 
-    <!-- jQuery (needed for .load()) -->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-</head>
+  </head>
 
-<body>
-
-    <!-- Navbar gets injected here -->
-    <div id="nav-placeholder"></div>
-
-    <!-- Place Main Content here -->
-    <div class="container">
+    <!--The body is where all visible content goes-->
+    <body>
+      <!--Navigation gets injected here bar-->
+      <div id="nav-placeholder"></div>
+      <div class="container">
           <h1>Hello, GitHub!</h1>
           <h2>My First Bootstrap Page</h2>
             <p>This is my first web page using version control with Git and GitHub.</p>
@@ -36,12 +39,12 @@
               <li><a href="https://www.w3schools.com/bootstrap5/index.php">Visit Bootstrap 5 Tutorial</a></li>
               </ul>
       </div>
-
-    <script>
-        $("#nav-placeholder").load("navbar.html");
-    </script>
-    <!-- Bootstrap JS must go last -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+      <script>
+          $("#nav-placeholder").load("navbar.html");
+      </script>
+      <!-- bootstrap JS must go last -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
 
 </html>
+
